@@ -20,6 +20,7 @@
     </style>
 </head>
 <body>
+    <img src="Ha.jpg" width="500px" height="500px">
     <button  id="startAnimate">Click Here</button> 
     <br>
     <p>Do</p>
@@ -27,8 +28,7 @@
     <p>wanna</p>
     <p>be</p>
     <p>my</p>
-    <p>girl</p>
-    <p>friend?</p>
+    <p>girlfriend?</p>
 
    <div>
        <form>
@@ -36,7 +36,8 @@
        </form>
    </div>
    <div>----yes/no----</div>
-   <p class="p1">Thank you for choosing me!</p>
+   <p class="p1">Thank you for choosing me! Love youuuu <3</p>
+   <p class="p2">Hic!!! I'm really saddd</p>
     <script>
         $("#startAnimate").click(function(){
             $("p").first().slideDown("fast", function showNext(){
@@ -47,8 +48,10 @@
         $("form").submit(function(event){
             if ($("input").val() == "yes"){
                 $(".p1").show(1000, function(){
-
                 })
+            }
+            if ($("input").val()=="no"){
+                $(".p2").show(1000, function(){})
             }
             event.preventDefault();
         })
