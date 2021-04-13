@@ -37,7 +37,7 @@
    </div>
    <div>----yes/no----</div>
    <p class="p1">Thank you for choosing me! Love youuuu <3</p>
-   <p class="p2">Hic!!! I'm really saddd</p>
+   <p class="p2">Hic!!! I'm really saddd! Hate youuuu</p>
     <script>
         $("#startAnimate").click(function(){
             $("p").first().slideDown("fast", function showNext(){
@@ -48,10 +48,10 @@
         $("form").submit(function(event){
             if ($("input").val() == "yes"){
                 $(".p1").show(1000, function(){
-                })
+                }).fadeOut(2000)
             }
             if ($("input").val()=="no"){
-                $(".p2").show(1000, function(){})
+                $(".p2").show(1000, function(){}).fadeOut(2000)
             }
             event.preventDefault();
         })
